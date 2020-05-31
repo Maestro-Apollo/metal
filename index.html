@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        header {
+            background: url('img/tropical-5074304_1920.jpg');
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+        
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background-color: transparent;
+            outline: none;
+        }
+        
+        .tabs .tab a:hover,
+        .tabs .tab a.active {
+            background-color: transparent;
+            color: indigo;
+        }
+        
+        .tabs .indicator {
+            background-color: indigo;
+        }
+        
+        .tabs .tab a {
+            color: indigo;
+        }
+        
+        @media (max-width: 576px) {
+            header {
+                min-height: 50vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="transparent ">
+            <div class="nav-wrapper ">
+                <div class="container ">
+                    <a href="#!" class="brand-logo indigo-text text-darken-3">Logo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#" class="indigo-text text-darken-4">Home</a></li>
+                        <li><a href="#about_me" class="indigo-text text-darken-4">About Me</a></li>
+                        <li><a href="#gallery" class="indigo-text text-darken-4">Gallery</a></li>
+                        <li><a href="#contact_us" class="indigo-text text-darken-4">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Home</a></li>
+            <li><a href="badges.html">About Us</a></li>
+            <li><a href="collapsible.html">Gallery</a></li>
+            <li><a href="mobile.html">Contact Us</a></li>
+        </ul>
+
+    </header>
+
+
+    <section class="container section scrollspy" id="gallery">
+        <div class="row">
+            <div class="col s12 l6">
+                <img src="pasta.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l4 offset-l1 left-align">
+                <h3 class="indigo-text">Pasta</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur ex dolore? Officia, beatae incidunt. Non harum, quam corporis odio natus obcaecati ullam? Optio rerum blanditiis provident possimus quas quos.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l6 push-l5">
+                <img src="makisushi.jpg" alt="" class="responsive-img materialboxed">
+
+            </div>
+            <div class="col s12 l4 pull-l6 right-align">
+
+                <h3 class="indigo-text">Sushi</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur ex dolore? Officia, beatae incidunt. Non harum, quam corporis odio natus obcaecati ullam? Optio rerum blanditiis provident possimus quas quos.</p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 l6">
+                <img src="Burger.jpg" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l4 offset-l1 left-align">
+                <h3 class="indigo-text">Burger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi consequuntur ex dolore? Officia, beatae incidunt. Non harum, quam corporis odio natus obcaecati ullam? Optio rerum blanditiis provident possimus quas quos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="img/buildings-1245953_1920.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="section container scrollspy" id="about_me">
+
+        <div class="row">
+            <div class="col s12 l4">
+                <h3 class="indigo-text">What I do...</h3>
+                <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ducimus nesciunt provident, ratione a suscipit dolorum veritatis sint. Aliquam eos libero repudiandae natus? Ipsam deserunt fuga omnis. Aut, debitis obcaecati?</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s4"><a href="#test1">Summer</a></li>
+                    <li class="tab col s4"><a class="active" href="#test2">Winter</a></li>
+
+                    <li class="tab col s4"><a href="#test4">Spring</a></li>
+                </ul>
+                <div id="test1" class="col s12">
+                    <p class="indigo-text text-darken-4 flow-text">SUMMER</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo neque quod tempore doloremque, veritatis ipsam voluptas modi laboriosam rerum consequuntur commodi quos, eligendi nisi earum asperiores fugit maiores quidem.</p>
+                </div>
+                <div id="test2" class="col s12">
+                    <p class="indigo-text text-darken-4 flow-text">WINTER</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo neque quod tempore doloremque, veritatis ipsam voluptas modi laboriosam rerum consequuntur commodi quos, eligendi nisi earum asperiores fugit maiores quidem.</p>
+                </div>
+                <div id="test4" class="col s12">
+                    <p class="indigo-text text-darken-4 flow-text">SPRING</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste explicabo neque quod tempore doloremque, veritatis ipsam voluptas modi laboriosam rerum consequuntur commodi quos, eligendi nisi earum asperiores fugit maiores quidem.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="img/1027254.jpg" alt="" class="responsive-img">
+            </div>
+        </div>
+    </section>
+    <section class="section container scrollspy" id="contact_us">
+
+        <div class="row">
+            <div class="col s12 l5">
+                <h3 class="indigo-text text-darken-4">Contact Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, possimus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, possimus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, possimus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, possimus.</p>
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form action="">
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="text" id="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+
+                        <textarea name="" id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date</label>
+                    </div>
+                    <div>
+                        <p>
+                            <label>
+                              <input type="radio" name="sesson" />
+                              <span>WINTER</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                              <input type="radio" name="sesson"/>
+                              <span>SUMMER</span>
+                            </label>
+                        </p>
+                    </div>
+                    <div class="center">
+                        <button class="btn indigo waves-effect waves-light">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l6">
+                    <h5>About Me</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, earum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, earum.</p>
+
+                </div>
+                <div class="col s12 l4 offset-l2">
+                    <h5>Contact Me</h5>
+                    <ul>
+                        <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Instagram</a></li>
+                        <li><a href="#" class="grey-text text-lighten-3">Stackover Flow</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright grey darken-4">
+            <div class="container center-align">&copy;2019 PhotoShop</div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true,
+                autoClose: true
+            });
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+
+</html>
